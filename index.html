@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tienda - Buscador Telefonos</title>
+    <!-- style app-->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!--  bootstrap CSS-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <h2 class="mb-5 text-center bg-dark text-white text-uppercase py-2">
+      Phone Shop
+    </h2>
+    <main class="container-lg shadow p-5">
+      <h3 class="text-center ">Filter Phone</h3>
+      <form id="search" action="">
+        <div class="row">
+          <div class="col-md-4">
+            <label for="brand" class="form-label my-2">Phone Brand</label>
+            <select
+              id="brand"
+              class="form-select"
+              aria-label="Default select example"
+            >
+              <option selected value="">Open this select menu</option>
+              <option value="Samsung">Samsung</option>
+              <option value="Phone">Phone</option>
+              <option value="Huawei">Huawei</option>
+              <option value="Xiaomi">Xiaomi</option>
+            </select>
+          </div>
+          <div class="col-md-4">
+            <label for="company" class="form-label my-2">Phone Company</label>
+            <select
+              id="company"
+              class="form-select"
+              aria-label="Default select example"
+            >
+              <option selected value="">Open this select menu</option>
+              <option value="Claro">Claro</option>
+              <option value="Tigo">Tigo</option>
+            </select>
+          </div>
+          <div class="col-md-4">
+            <label for="minimum" class="form-label my-2">Minimum Price</label>
+            <select
+              id="minimum"
+              class="form-select"
+              aria-label="Default select example"
+            >
+              <option selected value="">Open this select menu</option>
+              <option value="1000">Q1000</option>
+              <option value="2000">Q2000</option>
+              <option value="3000">Q3000</option>
+              <option value="4000">Q4000</option>
+              <option value="5000">Q5000</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <label for="maximum" class="form-label my-2">Maximum Price</label>
+            <select
+              id="maximum"
+              class="form-select"
+              aria-label="Default select example"
+            >
+              <option selected value="">Open this select menu</option>
+              <option value="8000">Q6000</option>
+              <option value="8000">Q8000</option>
+              <option value="10000">Q10000</option>
+              <option value="12000">Q12000</option>
+              <option value="15000">Q15000</option>
+            </select>
+          </div>
+          <div class="col-md-4">
+            <label for="memory" class="form-label my-2">Ram Memory</label>
+            <select
+              id="memory"
+              class="form-select"
+              aria-label="Default select example"
+            >
+              <option selected value="">Open this select menu</option>
+              <option value="4GB">4GB</option>
+              <option value="6GB">6GB</option>
+              <option value="8GB">8GB</option>
+              <option value="12GB">12GB</option>
+            </select>
+          </div>
+          <div class="col-md-4">
+            <label for="storage" class="form-label my-2">Storage</label>
+            <select
+              id="storage"
+              class="form-select"
+              aria-label="Default select example"
+            >
+              <option selected value="">Open this select menu</option>
+              <option value="50GB">60GB</option>
+              <option value="125GB">125GB</option>
+              <option value="250GB">250GB</option>
+              <option value="500GB">500GB</option>
+              <option value="1TB">1TB</option>
+            </select>
+          </div>
+        </div>
+      </form>
+
+      <div class="row mt-5">
+        <div id="result"></div>
+      </div>
+    </main>
+
+
+    <footer class="footer mt-5 bg-dark">
+      <p class="text-center text-white p-0 m-0 text-capitalize fs-5 fw-bold">Todos los derechos reservados &copy; Dwight Gudiel</p>
+    </footer>
+
+    <!-- bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- JavaScript app -->
+    <script src="./js/db.js"></script>
+    <script type="module" src="./js/app.js"></script>
+  </body>
+</html>
